@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu12"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Unidades de Vigilancia Comunitaria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-searchbar [(ngModel)]="searchTerm" placeholder="Buscar UVC..."></ion-searchbar>
+
+  <ion-list>
+   
+    <ion-item *ngFor="let uvc of filteredUvcs">
+      <ion-label>
+        <h2>{{ uvc['NOMBRE CONOCIDO POR LA COMUNIDAD'] || uvc['SUBCIRCUITO'] }}</h2>
+        <p>{{ uvc['DIRECCION'] }}</p>
+      </ion-label>
+      <ion-button fill="outline" slot="end" (click)="verEnMaps(uvc)">Ver</ion-button>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>

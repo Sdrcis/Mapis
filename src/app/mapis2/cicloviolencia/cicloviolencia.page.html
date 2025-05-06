@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+        Volver
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Ciclo de la Violencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="card-container" (click)="voltear()">
+    <div class="card" [class.volteada]="esReverso">
+      <div class="frente">
+        <img src="assets/ciclo_frente.png" alt="Frente" />
+      </div>
+      <div class="reverso">
+        <img src="assets/ciclo_reverso.png" alt="Reverso" />
+      </div>
+    </div>
+    <p class="indicacion">Toca la imagen para girar</p>
+  </div>
+</ion-content>

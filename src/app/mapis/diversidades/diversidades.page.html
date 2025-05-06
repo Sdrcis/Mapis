@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+        Volver
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Diversidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-searchbar
+    [(ngModel)]="searchTerm"
+    (ionInput)="filtrarDiversidades()"
+    placeholder="Buscar término, definición o ejemplo"
+  ></ion-searchbar>
+
+  <ion-accordion-group>
+    <ion-accordion value="descripcion">
+      <ion-item slot="header" color="light">
+        <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+        <ion-label>Acerca del contenido</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">{{ descripcionGeneral }}</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <ion-list>
+    <ion-accordion-group>
+      <ion-accordion
+        *ngFor="let item of filteredDiversidades"
+        value="{{ item.titulo }}"
+      >
+        <ion-item slot="header" color="light">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>{{ item.titulo }}</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <p class="definicion">{{ item.definicion }}</p>
+          <ion-chip
+            *ngFor="let ejemplo of item.ejemplos"
+            color="primary"
+            outline
+          >
+            <ion-label>{{ ejemplo }}</ion-label>
+          </ion-chip>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Unidades Policiales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchTerm" placeholder="Buscar..."></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let upc of filteredUpcs">
+      <ion-label>
+        <h2>{{ upc['NOMBRE DEL ESTABLECIMIENTO POLICIAL'] }}</h2>
+        <p>{{ upc['DIRECCIÓN'] }}</p>
+      </ion-label>
+      <ion-button slot="end" color="primary" (click)="verEnMaps(upc)">Ver</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

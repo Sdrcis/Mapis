@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar animated="true" placeholder="Buscar" [(ngModel)]="filterTerm"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let page of pages | filter:filterTerm">
+      <ion-label>
+       <h2 class="colorBlue"> {{page.name}} </h2>
+      <p>{{page.description}}</p>      
+      </ion-label>
+      <ion-button slot="end" href={{page.url}}>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,56 @@
+{
+  "titulo_general": "Diversidades sexuales y de género",
+  "descripcion_general": "Se refiere a las identidades sexuales; reivindica la aceptación de comportamientos sexuales, con iguales derechos, libertades y oportunidades, como prácticas amparadas por los derechos humanos. Es la pluralidad de opciones sexuales y manifestaciones de la identidad de género, que no se limitan a la heterosexualidad como norma de género y sexual, ni se circunscriben a lo masculino o femenino, como exclusivo de hombres y mujeres, respectivamente.\n\nEs un tema ligado al reconocimiento de los derechos sexuales y reproductivos, que pretenden romper el vínculo entre procreación y ejercicio de la sexualidad, propio de la heteronormatividad y la heterosexualidad.\n\nComenzó a tener visibilidad en el Ecuador, desde fines de la década de 1990, impulsada por los grupos LGTBI, luego de su lucha por despenalizar la homosexualidad.",
+  "categorias": [
+    {
+      "titulo": "Género",
+      "definicion": "Es un término complejo, multifacético, polisémico (con varios significados), en permanente construcción y redefinición. Las investigaciones feministas de la década de 1970 muestran que el concepto de sexo no es válido para explicar las diferencias de actitudes entre hombres y mujeres, en las distintas culturas a lo largo de la historia. Por tanto, se introdujo el concepto de género como categoría de análisis que permite diferenciar y separar lo biológico del sexo, de lo cultural y aprendido por el género.\n\nKate Paterson afirma que la posición de la mujer no está dictada por la naturaleza, por la biología o por el sexo, sino que es una cuestión de género. El Dr. Joan W. Scott, subraya que: “el género se conoce en las diversas prácticas que contribuyen a dar sentido a la experiencia. El género es una construcción discursiva y cultural de los sexos biológicos”.\n\nEn tanto categoría de análisis permite conocer cómo se construye lo femenino y lo masculino y cómo estas identidades se valoran, se organizan y se expresan.",
+      "ejemplos": [
+        "Masculino",
+        "Femenino"
+      ]
+    },
+    {
+      "titulo": "Sexo",
+      "definicion": "En su sentido estricto, el sexo se refiere a las diferencias biológicas entre el hombre y la mujer, a sus características fisiológicas, a la suma de las características biológicas que define el espectro de los humanos, personas como mujeres y hombres, o a la construcción biológica que se refiere a las características genéticas, hormonales, anatómicas y fisiológicas, sobre cuya base una persona es clasificada como macho o hembra al nacer.",
+      "ejemplos": [
+        "Hombre",
+        "Mujer",
+        "Intersex"
+      ]
+    },
+    {
+      "titulo": "Orientación sexual",
+      "definicion": "La orientación sexual se refiere a la capacidad de cada persona de sentir una profunda atracción emocional, afectiva y sexual por otras personas del mismo sexo/género, o más de un sexo/género, y entablar relaciones íntimas y sexuales con ellas. Básicamente hay tres orientaciones sexuales predominantes. Orientación hacia el mismo sexo/género (homosexualidad), hacia el sexo/género opuesto (heterosexualidad) o hacia ambos sexos/géneros (bisexualidad).",
+      "ejemplos": [
+        "Homosexualidad",
+        "Lesbianas",
+        "Heterosexualidad",
+        "Bisexualidad"
+      ]
+    },
+    {
+      "titulo": "Identidad de género",
+      "definicion": "La identidad de género se refiere a la experiencia de género innata, profundamente interna e individual de una persona, que puede o no corresponder con el sexo asignado a esa persona al nacer. Incluye tanto el sentir personal del cuerpo, que puede implicar, si así lo decide, la modificación de la apariencia o función física por medios quirúrgicos, médicos u otros, así como otras expresiones de género, que incluyen la vestimenta, la forma de hablar y los gestos.",
+      "ejemplos": [
+        "Travestis",
+        "Trans: Transexuales, Transsexual femenino, Transsexual masculino",
+        "Transgénero",
+        "Transgénero femenino",
+        "Transgénero masculino",
+        "Tercer género o no binario",
+        "Queer"
+      ]
+    },
+    {
+      "titulo": "Expresión de género",
+      "definicion": "La expresión de género es la representación externa de nuestro género. Es la forma en la que utilizamos determinados elementos para expresar quiénes somos, la manera en que se expresa el género. Se basa en los roles y experiencias.",
+      "ejemplos": [
+        "Femenino",
+        "No binaria",
+        "Masculino",
+        "Cisgénero"
+      ]
+    }
+  ]
+}

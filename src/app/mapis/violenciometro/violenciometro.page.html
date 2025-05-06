@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+        Volver
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Violenciómetro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Seleccione una acción</ion-label>
+    <ion-select
+      [(ngModel)]="selectedAction"
+      (ionChange)="actualizarGrafico()"
+      interface="popover"
+    >
+      <ng-container *ngFor="let nivel of nivelesViolencia">
+        <ion-select-option disabled
+          >--- {{ nivel.nombre }} ---</ion-select-option
+        >
+        <ion-select-option
+          *ngFor="let accion of nivel.acciones"
+          [value]="accion"
+        >
+          {{ accion }}
+        </ion-select-option>
+      </ng-container>
+    </ion-select>
+  </ion-item>
+
+  <div style="margin-top: 30px" *ngIf="mostrarGrafico">
+    <canvas
+      *ngIf="mostrarGrafico"
+      baseChart
+      [data]="chartData"
+      [type]="chartType"
+      [options]="chartOptions"
+    >
+    </canvas>
+    <div *ngIf="mostrarGrafico" class="mensaje-nivel">
+      <h3 style="margin-top: 20px">Nivel: {{ nivelActual }}</h3>
+      <p>{{ mensajeNivel }}</p>
+    </div>
+  </div>
+</ion-content>
